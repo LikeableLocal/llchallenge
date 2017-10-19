@@ -19,10 +19,9 @@ const Challenge = () => (
 
     <h2>Expectations</h2>
     <p>
-      1. The histogram should include 26 spots for each of the 26 letters of the
-      alphabet. Capital and lowercase letters should be combined and count
-      together. All other characters besides the 26 capital and 26 lowercase
-      letters should be ignored and not counted.
+      1. The histogram should include 26 bars that correspond to the 26 letters
+      of the alphabet. Note that it should ignore case and not count any
+      characters that are not letters of the alphabet.
     </p>
     <p>
       2. You should include a function somewhere called generateHistogram which
