@@ -1,0 +1,44 @@
+#!/usr/bin/env node
+require("babel-core/register");
+require("babel-polyfill");
+
+const app = require("../app");
+const debug = require("debug")("api:server");
+const http = require("http");
+
+(function startup() {
+  try {
+    app.set("port", 3030);
+    const server = http.createServer(app);
+    server.listen(3030);
+    server.on("error", error => {
+      if (error.syscall !== "listen") {
+        throw error;
+      }
+
+      const bind = typeof port === "string" ? `Pipe ${port}` : `Port ${port}`;
+
+      switch (error.code) {
+        case "EACCES":
+          debug(`${bind} requires elevated privileges`);
+          process.exit(1);
+          break;
+        case "EADDRINUSE":
+          debug(`${bind} is already in use`);
+          process.exit(1);
+          break;
+        default:
+          throw error;
+      }
+    });
+
+    server.on("listening", () => {
+      const addr = server.address();
+      const bind =
+        typeof addr === "string" ? `pipe ${addr}` : `port ${addr.port}`;
+      debug(`Listening on ${bind}`);
+    });
+  } catch (e) {
+    console.error(e);
+  }
+})();

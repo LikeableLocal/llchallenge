@@ -1,0 +1,28 @@
+{
+  env: {
+    browser: true,
+    node: true,
+    mocha: true,
+    es6: true,
+  },
+  plugins: ['react', 'import'],
+  settings: {
+    'import/resolve': {
+      moduleDirectory: ['node_modules', 'src'],
+    },
+  },
+  parserOptions: {
+    sourceType: 'module',
+  },
+  globals: {
+    __DEVELOPMENT__: true,
+    __CLIENT__: true,
+    __SERVER__: true,
+    __DISABLE_SSR__: true,
+    __DEVTOOLS__: true,
+    __DLLS__: true,
+    socket: true,
+    webpackIsomorphicTools: true,
+  },
+  parser: 'babel-eslint',
+}

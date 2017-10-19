@@ -1,0 +1,12 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.link {
+  font-size: 18px;
+  margin: 0 24px;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
