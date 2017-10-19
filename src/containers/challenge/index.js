@@ -64,9 +64,10 @@ const Challenge = () => (
       update as well.
     </p>
     <p>
-      6. When you're all done, send me your code (tarred and gzipped) as an
-      email attachment. I look forward ot seeing your response and I hope you
-      have fun! Thank you for taking the time to do this exercise.
+      6. When you're all done, send us your working code (please exclude the
+      node_modules directory) as an email attachment. I look forward to seeing
+      your response and I hope you have fun! Thank you for taking the time to do
+      this exercise.
     </p>
   </div>
 );

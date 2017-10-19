@@ -42,10 +42,10 @@ const Home = props => (
         about, you can email us and ask us!
       </p>
       <p>
-        Once you feel like you've given it a good go and you want to share your
-        solution, you can either tar/gzip up the whole directory (you can
-        exclude the node_modules directory to save some space) and then attach
-        that to an email reply to us.
+        Once you feel like you've given it a good go- share your solution with
+        us. Zip up the whole directory (although please exclude the node_modules
+        directory to save some space) and then attach that to an email reply to
+        us.
       </p>
       <p>
         After we get a chance to look at your solution we'll be back in touch
